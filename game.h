@@ -29,10 +29,12 @@ public:
 
     virtual void newNumber(int num) = 0;
 
-    bool check_winner()
+    bool const check_winner()
     {
         return winner;
     }
+
+    virtual ~Strategy() = default;
 };
 
 class FiveEven : public Strategy
@@ -50,6 +52,7 @@ public:
             winner = true;
         }
     }
+    ~FiveEven() override = default;
 };
 
 class FiveOdd : public Strategy
@@ -67,6 +70,7 @@ public:
             winner = true;
         }
     }
+    ~FiveOdd() override = default;
 };
 
 class Prime : public Strategy
@@ -81,6 +85,7 @@ public:
             winner = true;
         }
     }
+    ~Prime() override = default;
 };
 
 class Multiple10 : public Strategy
@@ -98,6 +103,7 @@ public:
             winner = true;
         }
     }
+    ~Multiple10() override = default;
 };
 
 class Multiple25 : public Strategy
@@ -115,6 +121,7 @@ public:
             winner = true;
         }
     }
+    ~Multiple25() override = default;
 };
 
 class Player
@@ -130,7 +137,9 @@ public:
 
     bool winner()
     {
-        strategy->check_winner();
+        bool win;
+        win = strategy->check_winner();
+        return win;
     }
 
     void strategyExecute(int new_number)

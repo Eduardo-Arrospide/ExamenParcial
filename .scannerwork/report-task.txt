@@ -1,0 +1,7 @@
+organization=eduardo-arrospide
+projectKey=Eduardo-Arrospide_ExamenParcial
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.29242
+dashboardUrl=https://sonarcloud.io/dashboard?id=Eduardo-Arrospide_ExamenParcial
+ceTaskId=AYD5HvmLfH19f5W9Zade
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYD5HvmLfH19f5W9Zade

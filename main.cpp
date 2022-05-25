@@ -7,8 +7,8 @@ Game* Game::instance = nullptr;
 
 int main() 
 {
-    srand(time(NULL));
-    
+    srand(time(nullptr));
+
     Game* game = Game::getInstance();
 
     std::vector<int> random_nums;
